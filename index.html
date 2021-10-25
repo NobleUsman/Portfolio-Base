@@ -55,68 +55,76 @@
 
                 <div class="container flex-column justify-content-around">
 
-                <div class="collapse navbar-collapse flex-column justify-content-around" id="navbarTogglerDemo02">
+                    <div class="collapse navbar-collapse flex-column justify-content-around" id="navbarTogglerDemo02">
 
-                    <a class="navbar-brand d-flex" href="#hero">Usman<br>Shaikh</a>
+                        <div class="d-flex flex-column">
+                            <a class="navbar-brand d-flex" href="#hero">Usman<br>Shaikh</a>
+                            <div class="d-flex justify-content-center">
+                                <span id="brand-text">front end developer</span>
+                            </div>
+                        </div>
 
-                    <div class="d-flex flex-column">
-                        <hr> <!-- separator -->
 
-                        <ul class="navbar-nav flex-xxl-column mb-2">
 
-                            <li class="nav-item d-flex justify-content-center">
-                                <a class="nav-link user-select-none" href="#about">about</a>
-                            </li>
-                            <li class="nav-item d-flex justify-content-center">
-                                <a class="nav-link user-select-none" href="#skills">my skills</a>
-                            </li>
-                            <li class="nav-item d-flex justify-content-center">
-                                <a class="nav-link user-select-none" href="#work">work</a>
-                            </li>
-                            <li class="nav-item d-flex justify-content-center">
-                                <a class="nav-link user-select-none" href="#blogs">blogs
-                                    <sup id="sup-id">
-                                        new
-                                        <span class="visually-hidden">new content</span>
-                                    </sup>
+                        <div class="d-flex flex-column">
+                            <hr> <!-- separator -->
+
+                            <ul class="navbar-nav flex-xxl-column mb-2">
+
+                                <li class="nav-item d-flex justify-content-center">
+                                    <a class="nav-link user-select-none" href="#about">about</a>
+                                </li>
+                                <li class="nav-item d-flex justify-content-center">
+                                    <a class="nav-link user-select-none" href="#skills">my skills</a>
+                                </li>
+                                <li class="nav-item d-flex justify-content-center">
+                                    <a class="nav-link user-select-none" href="#work">work</a>
+                                </li>
+                                <li class="nav-item d-flex justify-content-center">
+                                    <a class="nav-link user-select-none" href="#blogs">blogs
+                                        <sup id="sup-id">
+                                            new
+                                            <span class="visually-hidden">new content</span>
+                                        </sup>
+                                    </a>
+                                </li>
+                                <li class="nav-item d-flex justify-content-center">
+                                    <a class="nav-link user-select-none" href="#contact">contact</a>
+                                </li>
+                            </ul>
+
+                            <hr> <!-- separator -->
+                        </div>
+
+
+                        <ul id="nav-socials" class="navbar-nav flex-row justify-content-around pb-2">
+
+                            <li class="nav-item">
+                                <a class="nav-link user-select-none" href="https://twitter.com/heyusmanhere">
+                                    <i class="fab fa-twitter"></i>
                                 </a>
                             </li>
-                            <li class="nav-item d-flex justify-content-center">
-                                <a class="nav-link user-select-none" href="#contact">contact</a>
+                            <li class="nav-item">
+                                <a class="nav-link user-select-none"
+                                    href="https://www.linkedin.com/in/usmanshaikhhere/">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link user-select-none" href="https://www.facebook.com/heyusmanhere/">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link user-select-none" href="https://github.com/NobleUsman">
+                                    <i class="fab fa-github"></i>
+                                </a>
                             </li>
                         </ul>
 
-                        <hr> <!-- separator -->
                     </div>
 
-
-                    <ul id="nav-socials" class="navbar-nav flex-row justify-content-around mb-2">
-
-                        <li class="nav-item">
-                            <a class="nav-link user-select-none" href="https://twitter.com/heyusmanhere">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link user-select-none" href="https://www.linkedin.com/in/usmanshaikhhere/">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link user-select-none" href="https://www.facebook.com/heyusmanhere/">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link user-select-none" href="https://github.com/NobleUsman">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </li>
-                    </ul>
-
                 </div>
-
-            </div>
 
             </div>
         </nav>
@@ -136,7 +144,8 @@
                         <img src="img/monsoon-shot.jpg" alt="Photo of Usman Shaikh" class="moonshot user-select-none" />
                     </div>
 
-                    <div class="col-12 order-xxl-first d-flex flex-column align-items-center col-xxl-6 align-items-xxl-start">
+                    <div
+                        class="col-12 order-xxl-first d-flex flex-column align-items-center col-xxl-6 align-items-xxl-start">
                         <h1>
                             <span class="first-name">Usman</span><br />
                             <span class="last-name">Shaikh</span>
@@ -149,7 +158,7 @@
                 </div>
 
             </div>
-        
+
             <!-- Fancy Scroll Arrows -->
             <div id="arrow-left" class="position-absolute">
                 <div class="d-flex flex-column">
@@ -171,7 +180,7 @@
                     </span>
                 </div>
             </div>
-            
+
         </section>
 
 
@@ -179,16 +188,17 @@
         <section id="about" class="position-relative d-md-flex align-items-center">
             <div class="container-fluid">
 
-                <div>
-                    <div class="text-center user-select-none">
+                <div id="section-heading" class="text-md-center">
+                    <div class="text-xxl-start user-select-none">
                         <span class="material-icons">house</span>
                     </div>
-    
-                    <h1 class="text-center user-select-none">me, myself & i</h1>
-                </div>
-                
 
-                <div class="row"> <!--  justify-content-center to center, but thats a diff story as diff style adopted -->
+                    <h1 class="text-xxl-start user-select-none">me, myself & i</h1>
+                </div>
+
+
+                <div class="row justify-content-md-center justify-content-xxl-start">
+                    <!--  justify-content-center to center, but thats a diff story as diff style adopted -->
 
                     <div class="col col-md-10 col-xxl-6">
                         <div>
@@ -251,18 +261,18 @@
         <section id="skills" class="position-relative d-md-flex align-items-center">
             <div class="container-fluid">
 
-                <div>
-                    <div class="text-center user-select-none">
+                <div id="section-heading" class="text-md-center">
+                    <div class="text-xxl-start user-select-none">
                         <span class="material-icons">insights</span>
                     </div>
-    
-                    <h1 class="text-center user-select-none">skills & experience</h1>
+
+                    <h1 class="text-xxl-start user-select-none">skills & experience</h1>
                 </div>
-                
 
-                <div class="row">
 
-                    <div class="col col-xxl-6">
+                <div class="row justify-content-md-center justify-content-xxl-start">
+
+                    <div class="col col-md-10 col-xxl-6">
                         <div>
                             <p>
                                 Over the past few years, I've been progress-chasing myself into something which I would
@@ -332,17 +342,17 @@
         <section id="work" class="position-relative d-md-flex align-items-center">
             <div class="container-fluid">
 
-                <div>
-                    <div class="text-center user-select-none">
+                <div id="section-heading" class="text-md-center">
+                    <div class="text-xxl-start user-select-none">
                         <span class="material-icons">laptop</span>
                     </div>
-    
-                    <h1 class="text-center user-select-none">my work</h1>
+
+                    <h1 class="text-xxl-start user-select-none">my work</h1>
                 </div>
 
-                <div class="row">
+                <div class="row justify-content-md-center justify-content-xxl-start">
 
-                    <div class="col col-xxl-6">
+                    <div class="col col-md-10 col-xxl-6">
                         <div>
                             <p>
                                 The primary area of my interest is the front-end.
@@ -414,16 +424,16 @@
         <section id="blogs" class="position-relative d-md-flex align-items-center">
             <div class="container-fluid">
 
-                <div>
-                    <div class="text-center user-select-none">
+                <div id="section-heading" class="text-md-center">
+                    <div class="text-xxl-start user-select-none">
                         <span class="material-icons">text_snippet</span>
                     </div>
-    
-                    <h1 class="text-center user-select-none">blogs</h1>
+
+                    <h1 class="text-xxl-start user-select-none">blogs</h1>
                 </div>
 
-                <div class="row">
-                    <div class="col col-xxl-6">
+                <div class="row justify-content-md-center justify-content-xxl-start">
+                    <div class="col col-md-10 col-xxl-6">
                         <p>
                             In the build...
                             As blogs are a work in progress, and will be added weekly, this will be updated soon.
@@ -468,16 +478,16 @@
         <section id="contact" class="d-md-flex align-items-center">
             <div class="container-fluid">
 
-                <div>
-                    <div class="text-center user-select-none">
+                <div id="section-heading" class="text-md-center">
+                    <div class="text-xxl-start user-select-none">
                         <span class="material-icons">call</span>
                     </div>
-    
-                    <h1 class="text-center user-select-none">get in touch</h1>
+
+                    <h1 class="text-xxl-start user-select-none">get in touch</h1>
                 </div>
 
-                <div class="row">
-                    <div class="col col-xxl-6">
+                <div class="row justify-content-md-center justify-content-xxl-start">
+                    <div class="col col-md-10 col-xxl-6">
                         <p>
                             In the build...
                         </p>

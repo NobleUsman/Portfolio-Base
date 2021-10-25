@@ -227,6 +227,14 @@ h6 a:focus {
 .navbar-brand {
   margin-right: 0;
   justify-content: center;
+  line-height: 1.2rem;
+}
+
+#brand-text {
+  font-size: 8px;
+  font-weight: 400;
+  border-top: 1px solid;
+  margin-top: 5px;
 }
 
 .navbar-nav {
@@ -235,7 +243,7 @@ h6 a:focus {
 
 /* fix for mobile nav margin-top */
 nav .container .container {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .navbar-toggler {
@@ -268,7 +276,7 @@ nav sup {
 
 .navbar-dark .navbar-nav .nav-link:hover {
   color: #21e6c1;
-  
+
   -webkit-transition: 0.5s all ease-out;
   -moz-transition: 0.5s all ease-out;
   transition: 0.5s all ease-out;
@@ -399,13 +407,14 @@ nav sup {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  /*----------SECTION-HERO----------*/
+  /*----------SECTIONS----------*/
   #hero {
     min-height: 90vh;
   }
 
   /*----------Text / Image----------*/
-  p {
+  p,
+  .nav-link {
     font-size: 1.2rem;
   }
 
@@ -488,6 +497,7 @@ nav sup {
   }
 
   /*----------text / image----------*/
+
   #hero h1 {
     font-size: 8rem;
   }
@@ -514,7 +524,7 @@ nav sup {
 
   nav .container .container {
     margin-top: auto;
-}
+  }
 
   #navbarTogglerDemo02 {
     min-height: 100vh;
@@ -525,25 +535,37 @@ nav sup {
     margin: 8px 0;
   }
 
+  .nav-link {
+    font-size: 1rem;
+  }
+
   /*----------SECTIONS----------*/
   section {
     padding-left: 12rem !important;
   }
 
   section .container-fluid {
-      padding-left: 4rem;
+    padding-left: 4rem;
+  }
+
+  .container-fluid .row {
+    max-width: 1550px;
+    /* margin-left: auto; */
+  }
+
+  #section-heading {
+    margin-left: 10px;
   }
 
   /*----------SECTIONS - HERO----------*/
   #hero p {
-      padding-left: 5px;
+    padding-left: 5px;
   }
   #hero button {
-      margin-left: 5px;
+    margin-left: 5px;
   }
 
   #hero .row div:nth-child(2) {
-      width: fit-content;
+    width: fit-content;
   }
-  
 }
