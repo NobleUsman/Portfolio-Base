@@ -21,9 +21,9 @@ CHANGES :
 
 ## COLOR PALETTE ( https://colorhunt.co/palette/0820322c394b334756ff4c29 ) :
 
-- Primary ( #082032 ) Darkest Main (PREVIOUS: #0-8-2-0-3-2)
+- Primary ( #001432 ) Darkest Main (PREVIOUS: #0-8-2-0-3-2)
 - Secondary-1 ( #fff ) White
-- Secondary-2 ( #334756 ) Lightest Main (PREVIOUS: #3-3-4-7-5-6)
+- Secondary-2 ( #000c1e ) Shade Main (PREVIOUS: #3-3-4-7-5-6)
 - Accent ( #21E6C1 ) Accent Main (PREVIOUS: #F-F-4-C-2-9) 
 - Accent ( #0e6454 ) Accent Darker [ !Added due to contrast issues in chrome]  (PREVIOUS: #f-a-5-3-3-2)
 
@@ -227,7 +227,11 @@ h6 a:focus {
 .navbar-brand {
   margin-right: 0;
   justify-content: center;
-  line-height: 1.2rem;
+  line-height: 1rem;
+}
+
+.navbar-brand img {
+  width: 6rem;
 }
 
 #brand-text {
@@ -566,6 +570,6 @@ nav sup {
   }
 
   #hero .row div:nth-child(2) {
-    width: fit-content;
+    width: auto;
   }
 }
