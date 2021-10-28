@@ -269,6 +269,10 @@ nav ul {
   margin-top: 8px !important;
 }
 
+.nav-mobile-margin {
+  margin: 20px auto;
+}
+
 nav sup {
   color: #21e6c1;
 }
@@ -532,6 +536,10 @@ nav sup {
 
   #navbarTogglerDemo02 {
     min-height: 100vh;
+  }
+
+  .nav-mobile-margin {
+    margin: 0;
   }
 
   #nav-socials {
