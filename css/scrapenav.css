@@ -719,7 +719,7 @@ nav sup {
 }
 
 /* To manage mobile landscape navigation */
-@media (max-width: 927px) and (orientation: landscape) {
+@media (max-width: 1400px) and (orientation: landscape) {
   #landscape {
     display: flex;
     flex-direction: row;
@@ -749,7 +749,7 @@ nav sup {
     max-height: fit-content;
   }
 
-  nav .container .container {
+  /* nav .container .container {
     margin-top: 10px;
-  }
+  } */
 }
