@@ -42,6 +42,7 @@ CHANGES :
 ===============================================================
 */
 
+
 * {
   margin: 0;
   padding: 0;
@@ -72,7 +73,7 @@ body {
 }
 
 /* hide nav on scroll */
-.smart-scroll {
+/* .smart-scroll {
   position: fixed;
   top: 0;
   right: 0;
@@ -86,26 +87,26 @@ body {
 .scrolled-up {
   transform: translateY(0);
   transition: all 0.3s ease-in-out;
-}
+} */
 
 /* Works on Firefox */
 * {
-  scrollbar-width: none;
-  scrollbar-color: #59636b transparent;
+  scrollbar-width: thin; /* "auto" or "thin" */
+  scrollbar-color: #21E6C1 transparent;  /* scroll "thumb" and "track" color | (previous #59636b) */
 }
 
 /* Works on Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-  width: 2px; /* 12px */
+  width: 8.5px; /* 12px */
 }
 
 *::-webkit-scrollbar-track {
-  background: transparent;
+  background: transparent; /* transparent */
 }
 *::-webkit-scrollbar-thumb {
-  background-color: transparent; /* #001432 */
-  border-radius: 25px;
-  border: 2px solid transparent; /* 3px #59636b */
+  background-color: #21E6C1;
+  /* border-radius: 25px; */
+  /* border: 2px solid transparent; 3px #59636b */
 }
 
 /*
@@ -190,6 +191,7 @@ h6 a:focus {
 
 /* BUTTONS */
 .btn {
+  border-radius: 0;
   border-color: #21e6c1;
   color: #21e6c1;
   box-shadow: none;
@@ -212,7 +214,7 @@ h6 a:focus {
   ===============================================================
   ------------------------ MODAL / NAVBAR ------------------------
   ===============================================================
-  */
+*/
 
 #navigation {
   border: 0;
@@ -221,13 +223,17 @@ h6 a:focus {
 
 #navbarTogglerDemo02 {
   background-color: #000c1e;
+  max-height: fit-content;
+  overflow: hidden;
+  box-shadow: rgb(255 255 255) 0px 0px 0px 0.1rem;
   /* min-height: 50vh; */
 }
 
 .navbar-brand {
+  width: fit-content;
   margin-right: 0;
   justify-content: center;
-  line-height: 1rem;
+  line-height: 1.2rem;
 }
 
 .navbar-brand img {
@@ -269,12 +275,18 @@ nav ul {
   margin-top: 8px !important;
 }
 
-.nav-mobile-margin {
-  margin: 20px auto;
-}
-
 nav sup {
   color: #21e6c1;
+}
+
+.nav-mobile-pad {
+  width: 70%;
+  text-align: center;
+  /* padding: 20px; */
+}
+
+.nav-mobile-social-pad {
+  padding: 16px 16px !important;
 }
 
 .navbar-dark .navbar-nav .nav-link:link {
@@ -323,7 +335,7 @@ nav sup {
   ===============================================================
   ------------------------ ALL SECTIONS ------------------------
   ===============================================================
-  */
+*/
 
 /* #main-content {
     padding-top: 70px;
@@ -367,7 +379,7 @@ nav sup {
   ===============================================================
   ------------------------ SECTION - HERO ------------------------
   ===============================================================
-  */
+*/
 
 /* #hero {
     padding: 25px 25px 50px;
@@ -375,7 +387,8 @@ nav sup {
   
   #hero .row {
     margin-bottom: 25px;
-  } */
+  } 
+*/
 
 #hero h1 {
   text-transform: uppercase;
@@ -401,17 +414,105 @@ nav sup {
   border: 2px solid #fff;
 }
 
+
 /*
   ===============================================================
-  ------------------------ SECTION - SKILLS ------------------------
+  ------------------------ SECTION - BLOGS ------------------------
   ===============================================================
-  */
+*/
+
+.post-article {
+  padding: 50px 0;
+}
+
+.post-date {
+  font-weight: 400;
+  font-size: 0.8rem;
+  letter-spacing: 0.18rem;
+  text-transform: uppercase;
+  margin: 10px 0 20px;
+}
+
+.blog-post-content {
+  margin-bottom: 15px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+ 
+#blogs h3 a:link {
+  border-bottom: 2px dotted transparent;
+}
+
+#blogs h3 a:active,
+#blogs h3 a:focus {
+  color: #fff;
+  border-bottom: 2px solid #21e6c1;
+
+  -webkit-transition: 0.5s all ease-out;
+  -moz-transition: 0.5s all ease-out;
+  transition: 0.5s all ease-out;
+}
+
+/*
+  ===============================================================
+  ------------------------ SECTION - CONTACT ------------------------
+  ===============================================================
+*/
+
+
+  form {
+    padding-top: 50px;
+  }
+
+  .form-left-pad .col {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .form-control {
+    background-color: #1a2c47;
+    color: #667284;
+    opacity: 1;
+    margin-bottom: 10px;
+    border-radius: 0;
+    border: 0;
+    padding: 10px 20px;
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+
+  .form-control:focus {
+    color: #667284;
+    caret-color: white;
+  }
+
+  .form-control::placeholder {
+    color: #667284;
+    opacity: 0.8;
+  }
+
+  .form-control[type=text], 
+  .form-control[type=email] {
+    height: 50px;
+  }
+
+  .form-control:focus {
+    border-color: transparent;
+    box-shadow: none;
+    background-color: #1a2c47;
+  }
+
+  #contact .btn {
+    width: 50%;
+    margin-top: 25px;
+  }
+
 
 /*
   ===============================================================
   ------------------------ MEDIA QUERIES ------------------------
   ===============================================================
-  */
+*/
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -438,15 +539,10 @@ nav sup {
     max-width: 250px;
   }
 
-  /* 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-size: 6rem;
-  } */
+  /*----------SECTIONS - CONTACT----------*/
+  .form-left-pad .col {
+    padding-right: 12px;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -478,7 +574,7 @@ nav sup {
     }
     ----------*/
 
-  /*----------text / image----------*/
+  /*----------SECTION - HERO----------*/
   #hero h1 {
     font-size: 7rem;
   }
@@ -490,6 +586,7 @@ nav sup {
   #hero .moonshot {
     max-width: 361.66px;
   }
+
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
@@ -502,6 +599,14 @@ nav sup {
 
   #arrow-left {
     margin-left: 12rem;
+  }
+
+  #about h1,
+  #skills h1,
+  #work h1,
+  #blogs h1,
+  #contact h1 {
+    font-size: 4.5rem;
   }
 
   /*----------text / image----------*/
@@ -536,10 +641,16 @@ nav sup {
 
   #navbarTogglerDemo02 {
     min-height: 100vh;
+    box-shadow: none;
   }
 
-  .nav-mobile-margin {
-    margin: 0;
+  .nav-mobile-pad {
+    width: auto;
+    /* padding: 8px; */
+  }
+
+  .nav-mobile-social-pad {
+    padding: 8px 8px !important;
   }
 
   #nav-socials {
@@ -565,9 +676,9 @@ nav sup {
     /* margin-left: auto; */
   }
 
-  #section-heading {
+  /* #section-heading {
     margin-left: 10px;
-  }
+  } */
 
   /*----------SECTIONS - HERO----------*/
   #hero p {
@@ -579,5 +690,66 @@ nav sup {
 
   #hero .row div:nth-child(2) {
     width: auto;
+  }
+
+  /*----------SECTIONS - CONTACT----------*/
+  #contact .btn {
+    width: 40%;
+  }
+
+  /*----------SECTIONS - BLOGS----------*/
+  #blogs .row .col {
+    padding-right: 85px;
+  }
+
+  #blogs h3 {
+    width: 70%;
+  }
+
+}
+
+
+/* To manage animations */
+@media (prefers-reduced-motion) {
+  .animate__animated,
+  #arrow-left,
+  #arrow-right {
+    animation-name: none;
+  }
+}
+
+/* To manage mobile landscape navigation */
+@media (max-width: 927px) and (orientation: landscape) {
+  #landscape {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  #landscape .nav-link {
+    width: auto; /*check remove*/
+  }
+
+  .nav-separator-top {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+
+  .nav-separator-bottom {
+    margin: 0 auto;
+  }
+
+  #nav-socials {
+    margin-top: 0 !important;
+    padding-bottom: 0 !important;
+    justify-content: center !important;
+  }
+
+  .navbar-collapse {
+    max-height: fit-content;
+  }
+
+  nav .container .container {
+    margin-top: 10px;
   }
 }

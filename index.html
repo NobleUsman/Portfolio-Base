@@ -16,9 +16,10 @@
 
     <!-- Common -->
     <meta name="keywords" content="usman,shaikh,portfolio,blog,website,full,developer,front-end,usmanshaikh">
-    <meta name='author' content='Usman Shaikh'>
+    <meta name="author" content="Usman Shaikh">
     <meta name="theme-color" content="#000c1e">
-    <meta name="description" content="Hi, I’m a Front-End Developer based out of Mumbai, who aims to combine the beauty of design with the logical perfection of coding.">
+    <meta name="description"
+        content="Hi, I’m a Front-End Developer based out of Mumbai, who aims to combine the beauty of design with the logical perfection of coding.">
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="subject" content="Hi, this is my portfolio where I introduce myself and share some of my work.">
@@ -30,7 +31,8 @@
     <!-- (Play with this)  https://www.freecodecamp.org/news/what-is-open-graph-and-how-can-i-use-it-for-my-website/#why-do-i-need-it -->
     <meta property="og:image" content="https://www.nobleusman.com/img/social-cover.png">
     <meta property="og:image:alt" content="Photo of Usman Shaikh">
-    <meta property="og:description" content="Hi, I’m a Front-End Developer based out of Mumbai, who aims to combine the beauty of design with the logical perfection of coding.">
+    <meta property="og:description"
+        content="Hi, I’m a Front-End Developer based out of Mumbai, who aims to combine the beauty of design with the logical perfection of coding.">
     <meta property="og:site_name" content="Usman Shaikh">
     <meta property="og:locale" content="en_US">
     <meta property="article:author" content="Usman">
@@ -40,7 +42,8 @@
     <meta name="twitter:creator" content="@heyusmanhere">
     <meta name="twitter:url" content="https://www.nobleusman.com/">
     <meta name="twitter:title" content="Usman Shaikh | Front End Developer">
-    <meta name="twitter:description" content="Hi, I’m a Front-End Developer based out of Mumbai, who aims to combine the beauty of design with the logical perfection of coding.">
+    <meta name="twitter:description"
+        content="Hi, I’m a Front-End Developer based out of Mumbai, who aims to combine the beauty of design with the logical perfection of coding.">
     <!-- (Play with this as well) -->
     <meta name="twitter:image" content="https://www.nobleusman.com/img/social-cover.png">
     <meta name="twitter:image:alt" content="Photo of Usman Shaikh">
@@ -48,9 +51,9 @@
     <!-- Browsers / Platforms -->
     <!-- Apple -->
     <!-- (Play with this as well) -->
-    <link rel="apple-touch-icon" sizes="57x57" href="img/u-removebg-preview-crop.png"> <!-- Apple Touch Icon -->
-    <link rel="apple-touch-icon" sizes="196x196" href="img/u-removebg-preview-crop.png"> <!-- Apple Touch Icon Large -->
-    <link rel="apple-touch-startup-image" sizes="200x200" href="u-removebg-preview-crop.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/u-removebg-preview-crop"> <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" sizes="196x196" href="img/u-removebg-preview-crop"> <!-- Apple Touch Icon Large -->
+    <link rel="apple-touch-startup-image" sizes="200x200" href="img/u-removebg-preview-crop">
     <meta name="apple-mobile-web-app-title" content="Usman Shaikh | Front End Developer">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -63,8 +66,8 @@
 
     <!-- Icons -->
     <!-- <link rel="icon" href="img/u-bg.ico" sizes="32x32"> -->
-    <link rel="shortcut icon" sizes="400x400" href="img/u-removebg-preview-crop.png"> 
-    <link rel="mask-icon" href="img/u-removebg-preview-crop.png"> <!-- Safari Pinned Tab Icon -->
+    <link rel="shortcut icon" sizes="400x400" href="img/u-removebg-preview-crop.png?v=2">
+    <link rel="mask-icon" href="img/img/u-removebg-preview-crop"> <!-- Safari Pinned Tab Icon -->
 
 
     <!-- Google Fonts & Icons -->
@@ -74,10 +77,15 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome (Social Icons) -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+
+    <!-- Animate CSS -->
+    <!-- add npm module post development -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -111,9 +119,10 @@
 
                 <div class="container flex-column justify-content-around">
 
-                    <div class="collapse navbar-collapse navbar-nav-scroll flex-column justify-content-around" id="navbarTogglerDemo02">
+                    <div class="collapse navbar-collapse navbar-nav-scroll flex-column justify-content-around"
+                        id="navbarTogglerDemo02">
 
-                        <div class="d-flex flex-column">
+                        <div class="d-flex flex-column align-items-center">
                             <a class="navbar-brand d-flex flex-column align-items-center" href="#hero">
                                 <img src="img/u-logo.png" alt="Logo">
                                 Usman<br>Shaikh
@@ -126,56 +135,59 @@
 
 
                         <div class="d-flex flex-column">
-                            <hr> <!-- separator -->
+                            <hr class="nav-separator-top"> <!-- separator -->
 
-                            <ul class="navbar-nav flex-xxl-column mb-2">
+                            <ul id="landscape" class="navbar-nav flex-xxl-column mb-2">
 
-                                <li class="nav-item nav-mobile-margin d-flex justify-content-center">
-                                    <a class="nav-link user-select-none" href="#about">about</a>
+                                <li class="nav-item d-flex justify-content-center">
+                                    <a class="nav-link nav-mobile-pad user-select-none" href="#about">about</a>
                                 </li>
-                                <li class="nav-item nav-mobile-margin d-flex justify-content-center">
-                                    <a class="nav-link user-select-none" href="#skills">my skills</a>
+                                <li class="nav-item d-flex justify-content-center">
+                                    <a class="nav-link nav-mobile-pad user-select-none" href="#skills">my skills</a>
                                 </li>
-                                <li class="nav-item nav-mobile-margin d-flex justify-content-center">
-                                    <a class="nav-link user-select-none" href="#work">work</a>
+                                <li class="nav-item d-flex justify-content-center">
+                                    <a class="nav-link nav-mobile-pad user-select-none" href="#work">work</a>
                                 </li>
-                                <li class="nav-item nav-mobile-margin d-flex justify-content-center">
-                                    <a class="nav-link user-select-none" href="#blogs">blogs
+                                <li class="nav-item d-flex justify-content-center">
+                                    <a class="nav-link nav-mobile-pad user-select-none" href="#blogs">blogs
                                         <sup id="sup-id">
                                             new
                                             <span class="visually-hidden">new content</span>
                                         </sup>
                                     </a>
                                 </li>
-                                <li class="nav-item nav-mobile-margin d-flex justify-content-center">
-                                    <a class="nav-link user-select-none" href="#contact">contact</a>
+                                <li class="nav-item d-flex justify-content-center">
+                                    <a class="nav-link nav-mobile-pad user-select-none" href="#contact">contact</a>
                                 </li>
                             </ul>
 
-                            <hr> <!-- separator -->
+                            <hr class="nav-separator-bottom"> <!-- separator -->
                         </div>
 
 
                         <ul id="nav-socials" class="navbar-nav flex-row justify-content-around pb-2">
 
                             <li class="nav-item">
-                                <a class="nav-link user-select-none" href="https://twitter.com/heyusmanhere">
+                                <a class="nav-link nav-mobile-social-pad user-select-none"
+                                    href="https://twitter.com/heyusmanhere">
                                     <i class="fab fa-twitter"></i>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link user-select-none"
+                                <a class="nav-link nav-mobile-social-pad user-select-none"
                                     href="https://www.linkedin.com/in/usmanshaikhhere/">
                                     <i class="fab fa-linkedin-in"></i>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link user-select-none" href="https://www.facebook.com/heyusmanhere/">
+                                <a class="nav-link nav-mobile-social-pad user-select-none"
+                                    href="https://www.facebook.com/heyusmanhere/">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link user-select-none" href="https://github.com/NobleUsman">
+                                <a class="nav-link nav-mobile-social-pad user-select-none"
+                                    href="https://github.com/NobleUsman">
                                     <i class="fab fa-github"></i>
                                 </a>
                             </li>
@@ -200,18 +212,22 @@
                 <div class="row align-items-xxl-center">
 
                     <div class="col-12 d-flex justify-content-center col-xxl-6 justify-content-xxl-start">
-                        <img src="img/monsoon-shot.jpg" alt="Photo of Usman Shaikh" class="moonshot user-select-none" />
+                        <img src="img/monsoon-shot.jpg" alt="Photo of Usman Shaikh"
+                            class="moonshot user-select-none animate__animated animate__fadeInUp"
+                            style="animation-delay: 0.2s;" />
                     </div>
 
                     <div
                         class="col-12 order-xxl-first d-flex flex-column align-items-center col-xxl-6 align-items-xxl-start">
-                        <h1>
+                        <h1 class="animate__animated animate__fadeInUp">
                             <span class="first-name">Usman</span><br />
                             <span class="last-name">Shaikh</span>
                         </h1>
-                        <p class="user-select-all">Front End Developer</p>
+                        <p class="user-select-all animate__animated animate__fadeInUp" style="animation-delay: 0.3s;">
+                            Front End Developer</p>
                         <button type="button" onclick="location.href='#contact'"
-                            class="btn btn-outline-primary rounded-0 align-self-xxl-start">Contact me!</button>
+                            class="btn btn-outline-primary align-self-xxl-start animate__animated animate__fadeInUp"
+                            style="animation-delay: 0.3s;">Contact me!</button>
                     </div>
 
                 </div>
@@ -244,7 +260,7 @@
 
 
         <!-- About -->
-        <section id="about" class="position-relative d-md-flex align-items-center">
+        <section id="about" class="position-relative d-flex align-items-center">
             <div class="container-fluid">
 
                 <div id="section-heading" class="text-center">
@@ -259,7 +275,7 @@
                 <div class="row justify-content-md-center justify-content-xxl-start">
                     <!--  justify-content-center to center, but thats a diff story as diff style adopted -->
 
-                    <div class="col col-md-10 col-xxl-6">
+                    <div class="col col-12 col-md-10 col-xxl-6">
                         <div>
                             <p>
                                 I’m a Front-End Developer based out of Mumbai, who aims to combine the beauty of design
@@ -286,6 +302,10 @@
                                 </a>
                             </p>
                         </div>
+                    </div>
+
+                    <div class="col col-12 col-md-10 col-xxl-6 d-none">
+                        <!-- Animated Globe -->
                     </div>
 
                 </div>
@@ -317,7 +337,7 @@
         </section>
 
         <!-- Skills -->
-        <section id="skills" class="position-relative d-md-flex align-items-center">
+        <section id="skills" class="position-relative d-flex align-items-center">
             <div class="container-fluid">
 
                 <div id="section-heading" class="text-center">
@@ -331,7 +351,7 @@
 
                 <div class="row justify-content-md-center justify-content-xxl-start">
 
-                    <div class="col col-md-10 col-xxl-6">
+                    <div class="col col-12 col-md-10 col-xxl-6">
                         <div>
                             <p>
                                 Over the past few years, I've been progress-chasing myself into something which I would
@@ -398,7 +418,7 @@
         </section>
 
         <!-- Work -->
-        <section id="work" class="position-relative d-md-flex align-items-center">
+        <section id="work" class="position-relative d-flex align-items-center">
             <div class="container-fluid">
 
                 <div id="section-heading" class="text-center">
@@ -411,7 +431,7 @@
 
                 <div class="row justify-content-md-center justify-content-xxl-start">
 
-                    <div class="col col-md-10 col-xxl-6">
+                    <div class="col col-12 col-md-10 col-xxl-6">
                         <div>
                             <p>
                                 The primary area of my interest is the front-end.
@@ -435,23 +455,12 @@
                         </div>
                     </div>
 
-                </div>
-
-                <div class="row d-none">
-
-                    <div class="col">
-                        Project1
-                    </div>
-
-                    <div class="col">
-                        Project2
-                    </div>
-
-                    <div class="col">
-                        Project3
+                    <div class="col col-12 col-md-10 col-xxl-6 d-none">
+                        <!-- Project Cards/Slides -->
                     </div>
 
                 </div>
+
 
             </div>
 
@@ -480,7 +489,7 @@
         </section>
 
         <!-- Blogs -->
-        <section id="blogs" class="position-relative d-md-flex align-items-center">
+        <section id="blogs" class="position-relative d-flex align-items-center">
             <div class="container-fluid">
 
                 <div id="section-heading" class="text-center">
@@ -492,25 +501,114 @@
                 </div>
 
                 <div class="row justify-content-md-center justify-content-xxl-start">
-                    <div class="col col-md-10 col-xxl-6">
-                        <p>
-                            In the build...
+                    <div class="col col-12 col-md-10 col-xxl-6">
+                        <!-- <p>
                             As blogs are a work in progress, and will be added weekly, this will be updated soon.
                             Till then you can visit:
-                        </p>
+                        </p> -->
 
-                        <button type="button" onclick="location.href='https://nobleusman.github.io/'"
-                            class="btn btn-outline-primary rounded-0 align-self-xxl-start">🚧Have a look here🚧</button>
+                        <!-- <button type="button" onclick="location.href='https://nobleusman.github.io/'"
+                            class="btn btn-outline-primary rounded-0 align-self-xxl-start">🚧Have a look here🚧</button> -->
+
+                        <!-- Blog Cards -->
+
+                        <article class="post-article">
+                            <div class="post-content">
+                                <div class="blog-post-title">
+                                    <h3>
+                                        <a rel="single" data-id="1855" href="https://nobleusman.github.io/">
+                                            🔨Going Serverless🔨 - Content on the way, stay tuned👨🏽‍🔧...
+                                        </a>
+                                    </h3>
+                                </div>
+                                <time class="post-date d-block"> Jan 2022 <!-- April 23, 2021 --></time>
+                                <div class="blog-post-content">
+                                    Shifting to Netlify hosted static site, so in the meantime you can have a look at my
+                                    semi-organized glance of posts on what I had learned throughout😉
+                                </div>
+                                <a rel="single" data-id="1855" href="https://nobleusman.github.io/">
+                                    Read more...
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="post-article">
+                            <div class="post-content">
+                                <div class="blog-post-title">
+                                    <h3>
+                                        <a rel="single" data-id="1855" href="https://nobleusman.github.io/">
+                                            🔨Going Serverless🔨 - Content on the way, stay tuned👨🏽‍🔧...
+                                        </a>
+                                    </h3>
+                                </div>
+                                <time class="post-date d-block"> Jan 2022 <!-- April 23, 2021 --></time>
+                                <div class="blog-post-content">
+                                    Shifting to Netlify hosted static site, so in the meantime you can have a look at my
+                                    semi-organized glance of posts on what I had learned throughout😉
+                                </div>
+                                <a rel="single" data-id="1855" href="https://nobleusman.github.io/">
+                                    Read more...
+                                </a>
+                            </div>
+                        </article>
+
+                    </div>
+
+                    <div class="col col-12 col-md-10 col-xxl-6">
+
+                        <article class="post-article">
+                            <div class="post-content">
+                                <div class="blog-post-title">
+                                    <h3>
+                                        <a rel="single" data-id="1855" href="https://nobleusman.github.io/">
+                                            🔨Going Serverless🔨 - Content on the way, stay tuned👨🏽‍🔧...
+                                        </a>
+                                    </h3>
+                                </div>
+                                <time class="post-date d-block"> Jan 2022 <!-- April 23, 2021 --></time>
+                                <div class="blog-post-content">
+                                    Shifting to Netlify hosted static site, so in the meantime you can have a look at my
+                                    semi-organized glance of posts on what I had learned throughout😉
+                                </div>
+                                <a rel="single" data-id="1855" href="https://nobleusman.github.io/">
+                                    Read more...
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="post-article">
+                            <div class="post-content">
+                                <div class="blog-post-title">
+                                    <h3>
+                                        <a rel="single" data-id="1855" href="https://nobleusman.github.io/">
+                                            🔨Going Serverless🔨 - Content on the way, stay tuned👨🏽‍🔧...
+                                        </a>
+                                    </h3>
+                                </div>
+                                <time class="post-date d-block"> Jan 2022 <!-- April 23, 2021 --></time>
+                                <div class="blog-post-content">
+                                    Shifting to Netlify hosted static site, so in the meantime you can have a look at my
+                                    semi-organized glance of posts on what I had learned throughout😉
+                                </div>
+                                <a rel="single" data-id="1855" href="https://nobleusman.github.io/">
+                                    Read more...
+                                </a>
+                            </div>
+                        </article>
 
                     </div>
                 </div>
+
+                <footer class="d-flex justify-content-end">
+                    <a rel="blog" href="https://nobleusman.github.io/"> Read more articles... </a>
+                </footer>
 
                 <!-- link ( https://nobleusman.github.io/ ) -->
 
             </div>
 
             <!-- Fancy Scroll Arrows -->
-            <div id="arrow-left" class="position-absolute">
+            <!-- <div id="arrow-left" class="position-absolute">
                 <div class="d-flex flex-column">
                     <span class="material-icons d-none d-md-block">
                         keyboard_arrow_down
@@ -529,12 +627,12 @@
                         keyboard_arrow_down
                     </span>
                 </div>
-            </div>
+            </div> -->
 
         </section>
 
         <!-- Contact -->
-        <section id="contact" class="d-md-flex align-items-center">
+        <section id="contact" class="d-flex align-items-center">
             <div class="container-fluid">
 
                 <div id="section-heading" class="text-center">
@@ -546,11 +644,51 @@
                 </div>
 
                 <div class="row justify-content-md-center justify-content-xxl-start">
-                    <div class="col col-md-10 col-xxl-6">
+
+                    <div class="col col-12 col-md-10 col-xxl-6">
+
                         <p>
-                            In the build...
+                            If you have a question about something I've built, have an issue with me at a deep, personal
+                            level, or are interested in hiring me for a project, get in touch!
                         </p>
+
+                        <form name="contact" method="post" netlify autocomplete="off">
+
+                            <div class="row form-left-pad">
+                                <div class="col col-12 col-md-6">
+                                    <input type="text" class="form-control" placeholder="Name" name="name">
+                                </div>
+                                <div class="col col-12 col-md-6">
+                                    <input type="email" class="form-control" placeholder="Email" name="email">
+                                </div>
+                            </div>
+
+                            <div class="row form-left-pad">
+                                <div class="col col-12">
+                                    <input type="text" class="form-control" placeholder="Subject" name="subject">
+                                </div>
+                            </div>
+
+                            <div class="row form-left-pad">
+                                <div class="col col-12">
+                                    <textarea class="form-control" rows="4" placeholder="Message"
+                                        name="message"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="row form-left-pad">
+                                <div class="col col-12 d-flex justify-content-center justify-content-xxl-end">
+                                    <button type="submit" class="btn btn-outline-primary">Send!</button>
+                                </div>
+                            </div>
+
+                        </form>
                     </div>
+
+                    <div class="col col-12 col-md-10 col-xxl-6 d-none">
+                        <!-- Contact map -->
+                    </div>
+
                 </div>
 
             </div>
@@ -561,18 +699,32 @@
 
 
 
-
-
-
-
-
-    <!-- Scripts (jQuery, Bootstrap, , custom JS) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Scripts (Bootstrap, jQuery, custom JS) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
-        crossorigin="anonymous"></script>
+        integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"
+        defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        // Prevent automatic browser scroll on refresh
+        $(window).on('unload', function() {
+            $(window).scrollTop(0);
+        });
+        
+        window.onunload = function() {
+        window.scrollTo(0,0);
+        }
+        
+        if ('scrollRestoration' in history) {
+        history.scrollRestoration = 'manual';
+        }
 
-    <script src="js/scrape.js"></script>
+        // Close nav on link click
+        $("#navbarTogglerDemo02").on("show.bs.collapse", function() {
+        $("a.nav-link, a.navbar-brand, #main-content").click(function() {
+            $("#navbarTogglerDemo02").collapse("hide");
+        })
+        })
+    </script>
 
 </body>
 
